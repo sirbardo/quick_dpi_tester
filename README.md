@@ -9,7 +9,11 @@ relative `lLastX` / `lLastY` counts from every `WM_INPUT` mouse report, so you
 get the exact hardware counts with no acceleration, scaling, or pointer ballistics
 in the way.
 
-![one window, count and log](#) <!-- add a screenshot if you like -->
+> **Seen in the wild:** raw count measurements like these are how I showed that
+> the 3955 sensor's "center offset" isn't a true virtual sensor offset. It just
+> applies x-axis DPI scaling, which gives itself away as a mismatch between the X
+> and Y counts.
+> [Full breakdown on X (@bardozVAL)](https://x.com/bardozVAL/status/2063987252535898347)
 
 ## Why
 
